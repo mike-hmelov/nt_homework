@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Value;
 
 public abstract class WikiPageDownloader {
     @Value("${phoneresolver.wiki_page_web_address:https://en.wikipedia.org/wiki/List_of_country_calling_codes}")
-    private String wikiPageWebAddress;
+    protected String wikiPageWebAddress;
 
     @Autowired
     private WikiPageContentsWrapperFactory wikiPageContentsWrapperFactory;
